@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F0DE"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#B6811C"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="16dip"
+        android:paddingRight="16dip"
+        android:layout_below="@id/my_toolbar" >
+
+        <TextView
+            android:id="@+id/tvGoldWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Gold Weight (g)"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextWeight"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:autofillHints="weight"
+            android:ems="10"
+            android:hint="Weight (g)"
+            android:inputType="numberDecimal"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvGoldType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gold Type"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbKeep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Keep"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/rbWear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Wear"
+                android:textSize="15sp" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvGoldValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gold Value (RM)"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextPrice"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:autofillHints="price"
+            android:ems="10"
+            android:hint="Current Price (RM)"
+            android:inputType="numberDecimal"
+            android:textColor="#121111"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnZakCal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CONVERT" />
+
+        <!-- Add margin to create space between the button and the TextView -->
+        <TextView
+            android:id="@+id/tvoutput1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Total Value (g)"
+            android:textAlignment="viewStart"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvWeight"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:textAlignment="viewStart"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvoutput2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Zakat Payable (RM)"
+            android:textAlignment="viewStart"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvTotalGold"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:textAlignment="viewStart"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvoutput3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Zakat (RM)"
+            android:textAlignment="viewStart"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:textAlignment="viewStart"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
