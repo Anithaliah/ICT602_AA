@@ -118,7 +118,7 @@
         android:id="@+id/tvGithub"
         android:layout_width="290dp"
         android:layout_height="29dp"
-        android:text="Github: https://github.com/projects"
+        android:text="Github: https://github.com/Anithaliah/ICT602_AA"
         android:textSize="17sp"
         android:textStyle="bold"
         android:autoLink="web"
